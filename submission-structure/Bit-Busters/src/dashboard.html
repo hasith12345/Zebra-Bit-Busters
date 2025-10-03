@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🛡️ Project Sentinel - Live Dashboard</title>
+    <meta http-equiv="refresh" content="3">
+    <meta charset="utf-8">
+    <style>
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            margin: 0; 
+            padding: 20px; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+        }
+        .header {
+            text-align: center;
+            background: rgba(255,255,255,0.95);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .card {
+            background: rgba(255,255,255,0.95);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+        }
+        .metric {
+            text-align: center;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+        .metric-value { font-size: 2em; color: #2563eb; }
+        .metric-label { color: #6b7280; font-size: 0.9em; }
+        .alert { 
+            background: #fee2e2; 
+            border-left: 4px solid #dc2626; 
+            padding: 10px; 
+            margin: 5px 0; 
+            border-radius: 4px;
+        }
+        .success { 
+            background: #d1fae5; 
+            border-left: 4px solid #059669; 
+            padding: 10px; 
+            margin: 5px 0; 
+            border-radius: 4px;
+        }
+        .warning { 
+            background: #fef3c7; 
+            border-left: 4px solid #d97706; 
+            padding: 10px; 
+            margin: 5px 0; 
+            border-radius: 4px;
+        }
+        .event-list {
+            max-height: 300px;
+            overflow-y: auto;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 10px;
+        }
+        .event-item {
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 6px;
+            font-size: 0.9em;
+            border-left: 3px solid #3b82f6;
+            background: #f8fafc;
+        }
+        .status-indicator {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        .status-active { background: #22c55e; }
+        .status-warning { background: #f59e0b; }
+        .status-error { background: #ef4444; }
+        h2 { color: #1f2937; margin-top: 0; }
+        h3 { color: #374151; margin-bottom: 15px; }
+        .timestamp { 
+            font-size: 0.8em; 
+            color: #6b7280; 
+            text-align: center; 
+            margin-top: 20px; 
+        }
+        .live-indicator {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: #22c55e;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🛡️ Retail Intelligence Dashboard - Project Sentinel</h1>
+        <p><strong>Team Bit-Busters</strong> | <span class="live-indicator"></span> LIVE Real-time Analytics & Threat Detection</p>
+        <div class="timestamp">Last Updated: 2025-10-04 02:26:30 | Auto-refresh: 3 seconds</div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h2>🎯 System Overview</h2>
+            <div class="metric">
+                <div class="metric-value">35</div>
+                <div class="metric-label">Total Events Detected</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">3</div>
+                <div class="metric-label">Active Stations</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">96.0%</div>
+                <div class="metric-label">Average Efficiency</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>🚨 Event Types</h2>
+            <div style="margin: 10px 0; padding: 8px; background: #f8fafc; border-radius: 6px;">
+                <div style="display: flex; justify-content: space-between;">
+                    <span style="font-weight: bold;">System Crash</span>
+                    <span style="color: #059669;">12</span>
+                </div>
+                <div style="background: #e5e7eb; height: 6px; border-radius: 3px; margin: 3px 0;">
+                    <div style="background: #3b82f6; height: 100%; width: 34.285714285714285%; border-radius: 3px;"></div>
+                </div>
+                <span style="font-size: 0.8em; color: #6b7280;">34.3% of total events</span>
+            </div>
+            <div style="margin: 10px 0; padding: 8px; background: #f8fafc; border-radius: 6px;">
+                <div style="display: flex; justify-content: space-between;">
+                    <span style="font-weight: bold;">Inventory Discrepancy</span>
+                    <span style="color: #059669;">12</span>
+                </div>
+                <div style="background: #e5e7eb; height: 6px; border-radius: 3px; margin: 3px 0;">
+                    <div style="background: #3b82f6; height: 100%; width: 34.285714285714285%; border-radius: 3px;"></div>
+                </div>
+                <span style="font-size: 0.8em; color: #6b7280;">34.3% of total events</span>
+            </div>
+            <div style="margin: 10px 0; padding: 8px; background: #f8fafc; border-radius: 6px;">
+                <div style="display: flex; justify-content: space-between;">
+                    <span style="font-weight: bold;">Scanner Avoidance</span>
+                    <span style="color: #059669;">11</span>
+                </div>
+                <div style="background: #e5e7eb; height: 6px; border-radius: 3px; margin: 3px 0;">
+                    <div style="background: #3b82f6; height: 100%; width: 31.428571428571427%; border-radius: 3px;"></div>
+                </div>
+                <span style="font-size: 0.8em; color: #6b7280;">31.4% of total events</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>📊 Station Status</h2>
+            <div style="padding: 10px; margin: 5px 0; background: #f8fafc; border-radius: 6px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <span><span class="status-indicator status-active"></span><strong>Station SC-01</strong></span>
+                    <span style="font-size: 0.8em; color: #6b7280;">ACTIVE</span>
+                </div>
+                <div style="margin-top: 5px;">
+                    <span style="font-size: 0.9em;">Efficiency: 93.0%</span>
+                    <div style="background: #e5e7eb; height: 6px; border-radius: 3px; margin: 3px 0;">
+                        <div style="background: #22c55e; height: 100%; width: 93%; border-radius: 3px;"></div>
+                    </div>
+                </div>
+            </div>
+            <div style="padding: 10px; margin: 5px 0; background: #f8fafc; border-radius: 6px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <span><span class="status-indicator status-active"></span><strong>Station SC-02</strong></span>
+                    <span style="font-size: 0.8em; color: #6b7280;">ACTIVE</span>
+                </div>
+                <div style="margin-top: 5px;">
+                    <span style="font-size: 0.9em;">Efficiency: 96.0%</span>
+                    <div style="background: #e5e7eb; height: 6px; border-radius: 3px; margin: 3px 0;">
+                        <div style="background: #22c55e; height: 100%; width: 96%; border-radius: 3px;"></div>
+                    </div>
+                </div>
+            </div>
+            <div style="padding: 10px; margin: 5px 0; background: #f8fafc; border-radius: 6px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <span><span class="status-indicator status-active"></span><strong>Station SC-03</strong></span>
+                    <span style="font-size: 0.8em; color: #6b7280;">ACTIVE</span>
+                </div>
+                <div style="margin-top: 5px;">
+                    <span style="font-size: 0.9em;">Efficiency: 99.0%</span>
+                    <div style="background: #e5e7eb; height: 6px; border-radius: 3px; margin: 3px 0;">
+                        <div style="background: #22c55e; height: 100%; width: 99%; border-radius: 3px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h2>📋 Recent Events</h2>
+            <div class="event-list">
+                <div class="event-item">
+                    📊 <strong>Inventory Discrepancy</strong><br>
+                    <span style="font-size: 0.8em; color: #6b7280;">
+                        ID: E035 | 2025-10-04T02:26:21
+                    </span>
+                </div>
+                <div class="event-item">
+                    📊 <strong>System Crash</strong><br>
+                    <span style="font-size: 0.8em; color: #6b7280;">
+                        ID: E034 | 2025-10-04T02:26:21
+                    </span>
+                </div>
+                <div class="event-item">
+                    📊 <strong>Scanner Avoidance</strong><br>
+                    <span style="font-size: 0.8em; color: #6b7280;">
+                        ID: E033 | 2025-10-04T02:26:21
+                    </span>
+                </div>
+                <div class="event-item">
+                    📊 <strong>Inventory Discrepancy</strong><br>
+                    <span style="font-size: 0.8em; color: #6b7280;">
+                        ID: E032 | 2025-10-04T02:26:11
+                    </span>
+                </div>
+                <div class="event-item">
+                    📊 <strong>System Crash</strong><br>
+                    <span style="font-size: 0.8em; color: #6b7280;">
+                        ID: E031 | 2025-10-04T02:26:11
+                    </span>
+                </div>
+                <div class="event-item">
+                    📊 <strong>Scanner Avoidance</strong><br>
+                    <span style="font-size: 0.8em; color: #6b7280;">
+                        ID: E030 | 2025-10-04T02:26:11
+                    </span>
+                </div>
+                <div class="event-item">
+                    📊 <strong>Inventory Discrepancy</strong><br>
+                    <span style="font-size: 0.8em; color: #6b7280;">
+                        ID: E029 | 2025-10-04T02:26:01
+                    </span>
+                </div>
+                <div class="event-item">
+                    📊 <strong>System Crash</strong><br>
+                    <span style="font-size: 0.8em; color: #6b7280;">
+                        ID: E028 | 2025-10-04T02:26:01
+                    </span>
+                </div>
+                <div class="event-item">
+                    📊 <strong>Scanner Avoidance</strong><br>
+                    <span style="font-size: 0.8em; color: #6b7280;">
+                        ID: E027 | 2025-10-04T02:26:01
+                    </span>
+                </div>
+                <div class="event-item">
+                    📊 <strong>Inventory Discrepancy</strong><br>
+                    <span style="font-size: 0.8em; color: #6b7280;">
+                        ID: E026 | 2025-10-04T02:25:51
+                    </span>
+                </div>
+                <div class="event-item">
+                    📊 <strong>System Crash</strong><br>
+                    <span style="font-size: 0.8em; color: #6b7280;">
+                        ID: E025 | 2025-10-04T02:25:51
+                    </span>
+                </div>
+                <div class="event-item">
+                    📊 <strong>Scanner Avoidance</strong><br>
+                    <span style="font-size: 0.8em; color: #6b7280;">
+                        ID: E024 | 2025-10-04T02:25:51
+                    </span>
+                </div>
+                <div class="event-item">
+                    📊 <strong>Inventory Discrepancy</strong><br>
+                    <span style="font-size: 0.8em; color: #6b7280;">
+                        ID: E023 | 2025-10-04T02:25:40
+                    </span>
+                </div>
+                <div class="event-item">
+                    📊 <strong>System Crash</strong><br>
+                    <span style="font-size: 0.8em; color: #6b7280;">
+                        ID: E022 | 2025-10-04T02:25:40
+                    </span>
+                </div>
+                <div class="event-item">
+                    📊 <strong>Scanner Avoidance</strong><br>
+                    <span style="font-size: 0.8em; color: #6b7280;">
+                        ID: E021 | 2025-10-04T02:25:40
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>⚙️ System Status</h2>
+            <div class="success">✅ Data Processor: Online</div>
+            <div class="success">✅ Event Detector: Active</div>
+            <div class="success">✅ Dashboard: Live Auto-Update</div>
+            <div class="success">✅ Streaming Client: Connected</div>
+            
+            <h3>Live Metrics</h3>
+            <div style="background: #f8fafc; padding: 10px; border-radius: 6px; margin-top: 10px;">
+                <div style="display: flex; justify-content: space-between;">
+                    <span>Total Events:</span>
+                    <span style="color: #059669; font-weight: bold;">{total_events}</span>
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                    <span>System Uptime:</span>
+                    <span style="color: #059669; font-weight: bold;">100%</span>
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                    <span>Last Refresh:</span>
+                    <span style="color: #059669; font-weight: bold;">Live</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>🧠 AI Detection Status</h2>
+            <div style="font-size: 0.9em; margin-top: 10px;">
+                ✅ Scanner Avoidance Detection<br>
+                ✅ Barcode Switching Detection<br>
+                ✅ Weight Discrepancy Analysis<br>
+                ✅ Behavioral Pattern Analysis<br>
+                ✅ Inventory Prediction<br>
+                ✅ Multi-Station Correlation<br>
+                ✅ Dynamic Staffing Optimization<br>
+                ✅ Queue Management<br>
+                ✅ System Performance Monitoring<br>
+            </div>
+        </div>
+    </div>
+
+    <div class="header">
+        <p style="font-size: 0.9em; color: #6b7280; margin: 0;">
+            🏆 Project Sentinel - Advanced Retail Intelligence System | 
+            Powered by Real-time Analytics & Machine Learning | 
+            Team Bit-Busters © 2025 | <span class="live-indicator"></span> LIVE
+        </p>
+    </div>
+</body>
+</html>
