@@ -210,22 +210,22 @@ class DataProcessor:
         if 'RFID' in dataset or 'rfid' in dataset.lower():
             self.rfid_data.append(event_data)
             if len(self.rfid_data) > max_events:
-                self.rfid_data.pop(0)
+                self.rfid_data.popleft()
 
         elif 'POS' in dataset or 'pos' in dataset.lower() or 'transaction' in dataset.lower():
             self.pos_data.append(event_data)
             if len(self.pos_data) > max_events:
-                self.pos_data.pop(0)
+                self.pos_data.popleft()
 
         elif 'Product_recognition' in dataset or 'recognition' in dataset.lower():
             self.product_recognition_data.append(event_data)
             if len(self.product_recognition_data) > max_events:
-                self.product_recognition_data.pop(0)
+                self.product_recognition_data.popleft()
 
         elif 'Queue' in dataset or 'queue' in dataset.lower():
             self.queue_data.append(event_data)
             if len(self.queue_data) > max_events:
-                self.queue_data.pop(0)
+                self.queue_data.popleft()
 
         elif 'inventory' in dataset.lower():
             # Inventory is a snapshot, so just update the current state
