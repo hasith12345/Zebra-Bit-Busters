@@ -1,250 +1,54 @@
-{"timestamp": "2025-10-04T10:16:32.307819", "event_id": "E001", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:32.307836", "event_id": "E002", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:32.307843", "event_id": "E003", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:32.307847", "event_id": "E004", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:32.307852", "event_id": "E005", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:32.307856", "event_id": "E006", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:32.307884", "event_id": "E007", "event_data": {"event_name": "System Crash", "station_id": "SCC1", "last_transaction": "2025-08-13T16:00:26", "downtime_seconds": 4472166.307866, "confidence": "medium"}}
-{"timestamp": "2025-10-04T10:16:32.307919", "event_id": "E008", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_F_14", "Expected_Inventory": -6, "Actual_Inventory": 80, "Discrepancy": 86}}
-{"timestamp": "2025-10-04T10:16:42.313627", "event_id": "E009", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:42.313641", "event_id": "E010", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:42.313646", "event_id": "E011", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:42.313651", "event_id": "E012", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:42.313655", "event_id": "E013", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:42.313659", "event_id": "E014", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:42.313663", "event_id": "E015", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:42.313667", "event_id": "E016", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:42.313673", "event_id": "E017", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:42.313677", "event_id": "E018", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:42.313681", "event_id": "E019", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:42.313689", "event_id": "E020", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:42.313693", "event_id": "E021", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:42.313697", "event_id": "E022", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:42.313700", "event_id": "E023", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:42.313704", "event_id": "E024", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:42.313708", "event_id": "E025", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:42.313712", "event_id": "E026", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:42.313716", "event_id": "E027", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:42.313720", "event_id": "E028", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:42.313760", "event_id": "E029", "event_data": {"event_name": "System Crash", "station_id": "SCC1", "last_transaction": "2025-08-13T16:02:06", "downtime_seconds": 4472076.313728, "confidence": "medium"}}
-{"timestamp": "2025-10-04T10:16:42.313812", "event_id": "E030", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_F_14", "Expected_Inventory": -26, "Actual_Inventory": 80, "Discrepancy": 106}}
-{"timestamp": "2025-10-04T10:16:52.319741", "event_id": "E031", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:52.319756", "event_id": "E032", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:52.319760", "event_id": "E033", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:52.319764", "event_id": "E034", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:52.319768", "event_id": "E035", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:52.319772", "event_id": "E036", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:52.319776", "event_id": "E037", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:52.319780", "event_id": "E038", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:52.319783", "event_id": "E039", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:52.319787", "event_id": "E040", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:52.319791", "event_id": "E041", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:52.319795", "event_id": "E042", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:52.319799", "event_id": "E043", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:52.319803", "event_id": "E044", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:52.319806", "event_id": "E045", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:52.319810", "event_id": "E046", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:52.319814", "event_id": "E047", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:52.319818", "event_id": "E048", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:52.319822", "event_id": "E049", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:52.319830", "event_id": "E050", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:16:52.319849", "event_id": "E051", "event_data": {"event_name": "System Crash", "station_id": "SCC1", "last_transaction": "2025-08-13T16:03:46", "downtime_seconds": 4471986.319838, "confidence": "medium"}}
-{"timestamp": "2025-10-04T10:16:52.319911", "event_id": "E052", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_F_14", "Expected_Inventory": -46, "Actual_Inventory": 80, "Discrepancy": 126}}
-{"timestamp": "2025-10-04T10:17:02.324246", "event_id": "E053", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:02.324268", "event_id": "E054", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:02.324276", "event_id": "E055", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:02.324283", "event_id": "E056", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:02.324290", "event_id": "E057", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:02.324297", "event_id": "E058", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:02.324303", "event_id": "E059", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:02.324310", "event_id": "E060", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:02.324318", "event_id": "E061", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:02.324334", "event_id": "E062", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:02.324341", "event_id": "E063", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:02.324351", "event_id": "E064", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:02.324358", "event_id": "E065", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:02.324365", "event_id": "E066", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:02.324371", "event_id": "E067", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:02.324378", "event_id": "E068", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:02.324385", "event_id": "E069", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:02.324392", "event_id": "E070", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:02.324399", "event_id": "E071", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:02.324406", "event_id": "E072", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:02.324434", "event_id": "E073", "event_data": {"event_name": "System Crash", "station_id": "SCC1", "last_transaction": "2025-08-13T16:05:26", "downtime_seconds": 4471896.324417, "confidence": "medium"}}
-{"timestamp": "2025-10-04T10:17:02.324535", "event_id": "E074", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_F_14", "Expected_Inventory": -50, "Actual_Inventory": 80, "Discrepancy": 130}}
-{"timestamp": "2025-10-04T10:17:12.330909", "event_id": "E075", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:12.330969", "event_id": "E076", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:12.330994", "event_id": "E077", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:12.331017", "event_id": "E078", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:12.331039", "event_id": "E079", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:12.331060", "event_id": "E080", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:12.331082", "event_id": "E081", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:12.331103", "event_id": "E082", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:12.331125", "event_id": "E083", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:12.331147", "event_id": "E084", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:12.331167", "event_id": "E085", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:12.331190", "event_id": "E086", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:12.331210", "event_id": "E087", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:12.331278", "event_id": "E088", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:12.331305", "event_id": "E089", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:12.331329", "event_id": "E090", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:12.331353", "event_id": "E091", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:12.331381", "event_id": "E092", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:12.331404", "event_id": "E093", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:12.331427", "event_id": "E094", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:12.331630", "event_id": "E095", "event_data": {"event_name": "System Crash", "station_id": "SCC1", "last_transaction": "2025-08-13T16:07:01", "downtime_seconds": 4471811.331503, "confidence": "medium"}}
-{"timestamp": "2025-10-04T10:17:12.332163", "event_id": "E096", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_F_14", "Expected_Inventory": -50, "Actual_Inventory": 80, "Discrepancy": 130}}
-{"timestamp": "2025-10-04T10:17:22.341404", "event_id": "E097", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:22.341438", "event_id": "E098", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:22.341450", "event_id": "E099", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:22.341462", "event_id": "E100", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:22.341473", "event_id": "E101", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:22.341484", "event_id": "E102", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:22.341491", "event_id": "E103", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:22.341498", "event_id": "E104", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:22.341505", "event_id": "E105", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:22.341513", "event_id": "E106", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:22.341520", "event_id": "E107", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:22.341527", "event_id": "E108", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:22.341534", "event_id": "E109", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:22.341541", "event_id": "E110", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:22.341548", "event_id": "E111", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:22.341556", "event_id": "E112", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:22.341567", "event_id": "E113", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:22.341579", "event_id": "E114", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:22.341591", "event_id": "E115", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:22.341603", "event_id": "E116", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:22.341645", "event_id": "E117", "event_data": {"event_name": "System Crash", "station_id": "SCC1", "last_transaction": "2025-08-13T16:08:21", "downtime_seconds": 4471741.341623, "confidence": "medium"}}
-{"timestamp": "2025-10-04T10:17:22.341775", "event_id": "E118", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_F_14", "Expected_Inventory": -50, "Actual_Inventory": 80, "Discrepancy": 130}}
-{"timestamp": "2025-10-04T10:17:32.348737", "event_id": "E119", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:32.348776", "event_id": "E120", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:32.348792", "event_id": "E121", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:32.348806", "event_id": "E122", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:32.348820", "event_id": "E123", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:32.348834", "event_id": "E124", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:32.348848", "event_id": "E125", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:32.348861", "event_id": "E126", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:32.348874", "event_id": "E127", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:32.348888", "event_id": "E128", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:32.348901", "event_id": "E129", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:32.348915", "event_id": "E130", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:32.348928", "event_id": "E131", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:32.348943", "event_id": "E132", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:32.348957", "event_id": "E133", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:32.348971", "event_id": "E134", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:32.348985", "event_id": "E135", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:32.348999", "event_id": "E136", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:32.349012", "event_id": "E137", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:32.349025", "event_id": "E138", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:32.349099", "event_id": "E139", "event_data": {"event_name": "System Crash", "station_id": "SCC1", "last_transaction": "2025-08-13T16:08:21", "downtime_seconds": 4471751.349068, "confidence": "medium"}}
-{"timestamp": "2025-10-04T10:17:32.349253", "event_id": "E140", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_F_14", "Expected_Inventory": -50, "Actual_Inventory": 80, "Discrepancy": 130}}
-{"timestamp": "2025-10-04T10:17:42.356487", "event_id": "E141", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:42.356527", "event_id": "E142", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:42.356542", "event_id": "E143", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:42.356558", "event_id": "E144", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:42.356577", "event_id": "E145", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:42.356599", "event_id": "E146", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:42.356617", "event_id": "E147", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:42.356636", "event_id": "E148", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:42.356655", "event_id": "E149", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:42.356677", "event_id": "E150", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:42.356697", "event_id": "E151", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:42.356716", "event_id": "E152", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:42.356757", "event_id": "E153", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:42.356779", "event_id": "E154", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:42.356799", "event_id": "E155", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:42.356822", "event_id": "E156", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:42.356845", "event_id": "E157", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:42.356864", "event_id": "E158", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:42.356877", "event_id": "E159", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:42.356890", "event_id": "E160", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:42.356990", "event_id": "E161", "event_data": {"event_name": "System Crash", "station_id": "SCC1", "last_transaction": "2025-08-13T16:08:21", "downtime_seconds": 4471761.35696, "confidence": "medium"}}
-{"timestamp": "2025-10-04T10:17:42.357183", "event_id": "E162", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_F_14", "Expected_Inventory": -50, "Actual_Inventory": 80, "Discrepancy": 130}}
-{"timestamp": "2025-10-04T10:17:52.365322", "event_id": "E163", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:52.365344", "event_id": "E164", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:52.365351", "event_id": "E165", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:52.365357", "event_id": "E166", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:52.365362", "event_id": "E167", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:52.365368", "event_id": "E168", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:52.365374", "event_id": "E169", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:52.365380", "event_id": "E170", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:52.365385", "event_id": "E171", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:52.365391", "event_id": "E172", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:52.365397", "event_id": "E173", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:52.365403", "event_id": "E174", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:52.365409", "event_id": "E175", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:52.365415", "event_id": "E176", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:52.365420", "event_id": "E177", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:52.365426", "event_id": "E178", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:52.365432", "event_id": "E179", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:52.365438", "event_id": "E180", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:52.365444", "event_id": "E181", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:52.365449", "event_id": "E182", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:17:52.365478", "event_id": "E183", "event_data": {"event_name": "System Crash", "station_id": "SCC1", "last_transaction": "2025-08-13T16:08:21", "downtime_seconds": 4471771.365461, "confidence": "medium"}}
-{"timestamp": "2025-10-04T10:17:52.365568", "event_id": "E184", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_F_14", "Expected_Inventory": -50, "Actual_Inventory": 80, "Discrepancy": 130}}
-{"timestamp": "2025-10-04T10:18:02.373072", "event_id": "E185", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:02.373109", "event_id": "E186", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:02.373122", "event_id": "E187", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:02.373134", "event_id": "E188", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:02.373149", "event_id": "E189", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:02.373162", "event_id": "E190", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:02.373229", "event_id": "E191", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:02.373240", "event_id": "E192", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:02.373282", "event_id": "E193", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:02.373293", "event_id": "E194", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:02.373299", "event_id": "E195", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:02.373309", "event_id": "E196", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:02.373319", "event_id": "E197", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:02.373328", "event_id": "E198", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:02.373337", "event_id": "E199", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:02.373346", "event_id": "E200", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:02.373356", "event_id": "E201", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:02.373414", "event_id": "E202", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:02.373423", "event_id": "E203", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:02.373430", "event_id": "E204", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:02.373516", "event_id": "E205", "event_data": {"event_name": "System Crash", "station_id": "SCC1", "last_transaction": "2025-08-13T16:08:21", "downtime_seconds": 4471781.373472, "confidence": "medium"}}
-{"timestamp": "2025-10-04T10:18:02.373631", "event_id": "E206", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_F_14", "Expected_Inventory": -50, "Actual_Inventory": 80, "Discrepancy": 130}}
-{"timestamp": "2025-10-04T10:18:12.380182", "event_id": "E207", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:12.380223", "event_id": "E208", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:12.380237", "event_id": "E209", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:12.380250", "event_id": "E210", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:12.380263", "event_id": "E211", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:12.380277", "event_id": "E212", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:12.380292", "event_id": "E213", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:12.380305", "event_id": "E214", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:12.380318", "event_id": "E215", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:12.380331", "event_id": "E216", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:12.380344", "event_id": "E217", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:12.380357", "event_id": "E218", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:12.380370", "event_id": "E219", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:12.380383", "event_id": "E220", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:12.380396", "event_id": "E221", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:12.380409", "event_id": "E222", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:12.380422", "event_id": "E223", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:12.380436", "event_id": "E224", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:12.380448", "event_id": "E225", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:12.380476", "event_id": "E226", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:12.380530", "event_id": "E227", "event_data": {"event_name": "System Crash", "station_id": "SCC1", "last_transaction": "2025-08-13T16:08:21", "downtime_seconds": 4471791.3805, "confidence": "medium"}}
-{"timestamp": "2025-10-04T10:18:12.380687", "event_id": "E228", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_F_14", "Expected_Inventory": -50, "Actual_Inventory": 80, "Discrepancy": 130}}
-{"timestamp": "2025-10-04T10:18:22.389017", "event_id": "E229", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:22.389055", "event_id": "E230", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:22.389074", "event_id": "E231", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:22.389087", "event_id": "E232", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:22.389101", "event_id": "E233", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:22.389115", "event_id": "E234", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:22.389129", "event_id": "E235", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:22.389142", "event_id": "E236", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:22.389155", "event_id": "E237", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:22.389168", "event_id": "E238", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:22.389181", "event_id": "E239", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:22.389195", "event_id": "E240", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:22.389208", "event_id": "E241", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:22.389222", "event_id": "E242", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:22.389235", "event_id": "E243", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:22.389248", "event_id": "E244", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:22.389261", "event_id": "E245", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:22.389275", "event_id": "E246", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:22.389288", "event_id": "E247", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:22.389301", "event_id": "E248", "event_data": {"event_name": "Scanner Avoidance", "station_id": "SCC1", "SKU": "PRD_T_03", "confidence": "high"}}
-{"timestamp": "2025-10-04T10:18:22.389357", "event_id": "E249", "event_data": {"event_name": "System Crash", "station_id": "SCC1", "last_transaction": "2025-08-13T16:08:21", "downtime_seconds": 4471801.389325, "confidence": "medium"}}
-{"timestamp": "2025-10-04T10:18:22.389511", "event_id": "E250", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_F_14", "Expected_Inventory": -50, "Actual_Inventory": 80, "Discrepancy": 130}}
+{"timestamp": "2025-10-04T11:39:40.159079", "event_id": "E001", "event_data": {"event_name": "Long Queue Alert", "station_id": "SCC1", "customer_count": 5, "average_wait_time": 61.9, "severity": "medium", "confidence": "high"}}
+{"timestamp": "2025-10-04T11:40:10.180987", "event_id": "E002", "event_data": {"event_name": "System Crash", "station_id": "SCC1", "last_transaction": "2025-08-13T16:08:55", "downtime_seconds": 4476675.180929, "confidence": "medium"}}
+{"timestamp": "2025-10-04T11:40:10.181090", "event_id": "E003", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_F_14", "Expected_Inventory": -1, "Actual_Inventory": 80, "Discrepancy": 81}}
+{"timestamp": "2025-10-04T11:40:10.181104", "event_id": "E004", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_A_05", "Expected_Inventory": -1, "Actual_Inventory": 80, "Discrepancy": 81}}
+{"timestamp": "2025-10-04T11:40:10.181113", "event_id": "E005", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_B_03", "Expected_Inventory": -1, "Actual_Inventory": 100, "Discrepancy": 101}}
+{"timestamp": "2025-10-04T11:40:10.181119", "event_id": "E006", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_C_02", "Expected_Inventory": -1, "Actual_Inventory": 150, "Discrepancy": 151}}
+{"timestamp": "2025-10-04T11:40:20.191718", "event_id": "E007", "event_data": {"event_name": "System Crash", "station_id": "SCC1", "last_transaction": "2025-08-13T16:09:05", "downtime_seconds": 4476675.191684, "confidence": "medium"}}
+{"timestamp": "2025-10-04T11:40:20.191842", "event_id": "E008", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_F_14", "Expected_Inventory": -1, "Actual_Inventory": 79, "Discrepancy": 80}}
+{"timestamp": "2025-10-04T11:40:20.191859", "event_id": "E009", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_A_05", "Expected_Inventory": -1, "Actual_Inventory": 79, "Discrepancy": 80}}
+{"timestamp": "2025-10-04T11:40:20.191870", "event_id": "E010", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_B_03", "Expected_Inventory": -1, "Actual_Inventory": 99, "Discrepancy": 100}}
+{"timestamp": "2025-10-04T11:40:20.191880", "event_id": "E011", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_C_02", "Expected_Inventory": -1, "Actual_Inventory": 149, "Discrepancy": 150}}
+{"timestamp": "2025-10-04T11:40:20.191890", "event_id": "E012", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_F_08", "Expected_Inventory": -1, "Actual_Inventory": 39, "Discrepancy": 40}}
+{"timestamp": "2025-10-04T11:40:20.191900", "event_id": "E013", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_H_01", "Expected_Inventory": -1, "Actual_Inventory": 59, "Discrepancy": 60}}
+{"timestamp": "2025-10-04T11:40:30.204459", "event_id": "E014", "event_data": {"event_name": "System Crash", "station_id": "SCC1", "last_transaction": "2025-08-13T16:09:05", "downtime_seconds": 4476685.204429, "confidence": "medium"}}
+{"timestamp": "2025-10-04T11:40:30.204574", "event_id": "E015", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_F_14", "Expected_Inventory": -1, "Actual_Inventory": 79, "Discrepancy": 80}}
+{"timestamp": "2025-10-04T11:40:30.204592", "event_id": "E016", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_A_05", "Expected_Inventory": -1, "Actual_Inventory": 79, "Discrepancy": 80}}
+{"timestamp": "2025-10-04T11:40:30.204603", "event_id": "E017", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_B_03", "Expected_Inventory": -1, "Actual_Inventory": 99, "Discrepancy": 100}}
+{"timestamp": "2025-10-04T11:40:30.204614", "event_id": "E018", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_C_02", "Expected_Inventory": -1, "Actual_Inventory": 149, "Discrepancy": 150}}
+{"timestamp": "2025-10-04T11:40:30.204624", "event_id": "E019", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_F_08", "Expected_Inventory": -1, "Actual_Inventory": 39, "Discrepancy": 40}}
+{"timestamp": "2025-10-04T11:40:30.204634", "event_id": "E020", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_H_01", "Expected_Inventory": -1, "Actual_Inventory": 59, "Discrepancy": 60}}
+{"timestamp": "2025-10-04T11:40:30.205376", "event_id": "E021", "event_data": {"event_name": "Station Performance Alert", "station_id": "SCC2", "efficiency_score": 40.0, "recommendation": "Review station operation"}}
+{"timestamp": "2025-10-04T11:40:40.211007", "event_id": "E022", "event_data": {"event_name": "System Crash", "station_id": "SCC1", "last_transaction": "2025-08-13T16:13:00", "downtime_seconds": 4476460.210997, "confidence": "medium"}}
+{"timestamp": "2025-10-04T11:40:40.211058", "event_id": "E023", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_F_14", "Expected_Inventory": -1, "Actual_Inventory": 79, "Discrepancy": 80}}
+{"timestamp": "2025-10-04T11:40:40.211064", "event_id": "E024", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_A_05", "Expected_Inventory": -1, "Actual_Inventory": 79, "Discrepancy": 80}}
+{"timestamp": "2025-10-04T11:40:40.211067", "event_id": "E025", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_B_03", "Expected_Inventory": -1, "Actual_Inventory": 99, "Discrepancy": 100}}
+{"timestamp": "2025-10-04T11:40:40.211069", "event_id": "E026", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_C_02", "Expected_Inventory": -1, "Actual_Inventory": 149, "Discrepancy": 150}}
+{"timestamp": "2025-10-04T11:40:40.211071", "event_id": "E027", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_F_08", "Expected_Inventory": -1, "Actual_Inventory": 39, "Discrepancy": 40}}
+{"timestamp": "2025-10-04T11:40:40.211073", "event_id": "E028", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_H_01", "Expected_Inventory": -1, "Actual_Inventory": 59, "Discrepancy": 60}}
+{"timestamp": "2025-10-04T11:40:40.211075", "event_id": "E029", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_T_03", "Expected_Inventory": -1, "Actual_Inventory": 150, "Discrepancy": 151}}
+{"timestamp": "2025-10-04T11:40:40.211077", "event_id": "E030", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_S_05", "Expected_Inventory": -1, "Actual_Inventory": 120, "Discrepancy": 121}}
+{"timestamp": "2025-10-04T11:40:40.211078", "event_id": "E031", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_F_06", "Expected_Inventory": -1, "Actual_Inventory": 150, "Discrepancy": 151}}
+{"timestamp": "2025-10-04T11:40:40.211318", "event_id": "E032", "event_data": {"event_name": "Station Performance Alert", "station_id": "SCC2", "efficiency_score": 40.0, "recommendation": "Review station operation"}}
+{"timestamp": "2025-10-04T11:40:50.216244", "event_id": "E033", "event_data": {"event_name": "System Crash", "station_id": "SCC1", "last_transaction": "2025-08-13T16:13:00", "downtime_seconds": 4476470.216203, "confidence": "medium"}}
+{"timestamp": "2025-10-04T11:40:50.216408", "event_id": "E034", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_F_14", "Expected_Inventory": -1, "Actual_Inventory": 79, "Discrepancy": 80}}
+{"timestamp": "2025-10-04T11:40:50.216426", "event_id": "E035", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_A_05", "Expected_Inventory": -1, "Actual_Inventory": 79, "Discrepancy": 80}}
+{"timestamp": "2025-10-04T11:40:50.216438", "event_id": "E036", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_B_03", "Expected_Inventory": -1, "Actual_Inventory": 99, "Discrepancy": 100}}
+{"timestamp": "2025-10-04T11:40:50.216448", "event_id": "E037", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_C_02", "Expected_Inventory": -1, "Actual_Inventory": 149, "Discrepancy": 150}}
+{"timestamp": "2025-10-04T11:40:50.216459", "event_id": "E038", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_F_08", "Expected_Inventory": -1, "Actual_Inventory": 39, "Discrepancy": 40}}
+{"timestamp": "2025-10-04T11:40:50.216472", "event_id": "E039", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_H_01", "Expected_Inventory": -1, "Actual_Inventory": 59, "Discrepancy": 60}}
+{"timestamp": "2025-10-04T11:40:50.216482", "event_id": "E040", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_T_03", "Expected_Inventory": -1, "Actual_Inventory": 150, "Discrepancy": 151}}
+{"timestamp": "2025-10-04T11:40:50.216493", "event_id": "E041", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_S_05", "Expected_Inventory": -1, "Actual_Inventory": 120, "Discrepancy": 121}}
+{"timestamp": "2025-10-04T11:40:50.216525", "event_id": "E042", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_F_06", "Expected_Inventory": -1, "Actual_Inventory": 150, "Discrepancy": 151}}
+{"timestamp": "2025-10-04T11:40:50.217584", "event_id": "E043", "event_data": {"event_name": "Station Performance Alert", "station_id": "SCC2", "efficiency_score": 40.0, "recommendation": "Review station operation"}}
+{"timestamp": "2025-10-04T11:41:00.231929", "event_id": "E044", "event_data": {"event_name": "System Crash", "station_id": "SCC1", "last_transaction": "2025-08-13T16:13:00", "downtime_seconds": 4476480.231882, "confidence": "medium"}}
+{"timestamp": "2025-10-04T11:41:00.232105", "event_id": "E045", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_F_14", "Expected_Inventory": -1, "Actual_Inventory": 79, "Discrepancy": 80}}
+{"timestamp": "2025-10-04T11:41:00.232124", "event_id": "E046", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_A_05", "Expected_Inventory": -1, "Actual_Inventory": 79, "Discrepancy": 80}}
+{"timestamp": "2025-10-04T11:41:00.232137", "event_id": "E047", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_B_03", "Expected_Inventory": -1, "Actual_Inventory": 99, "Discrepancy": 100}}
+{"timestamp": "2025-10-04T11:41:00.232150", "event_id": "E048", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_C_02", "Expected_Inventory": -1, "Actual_Inventory": 149, "Discrepancy": 150}}
+{"timestamp": "2025-10-04T11:41:00.232159", "event_id": "E049", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_F_08", "Expected_Inventory": -1, "Actual_Inventory": 39, "Discrepancy": 40}}
+{"timestamp": "2025-10-04T11:41:00.232171", "event_id": "E050", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_H_01", "Expected_Inventory": -1, "Actual_Inventory": 59, "Discrepancy": 60}}
+{"timestamp": "2025-10-04T11:41:00.232182", "event_id": "E051", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_T_03", "Expected_Inventory": -1, "Actual_Inventory": 150, "Discrepancy": 151}}
+{"timestamp": "2025-10-04T11:41:00.232193", "event_id": "E052", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_S_05", "Expected_Inventory": -1, "Actual_Inventory": 120, "Discrepancy": 121}}
+{"timestamp": "2025-10-04T11:41:00.232204", "event_id": "E053", "event_data": {"event_name": "Inventory Discrepancy", "SKU": "PRD_F_06", "Expected_Inventory": -1, "Actual_Inventory": 150, "Discrepancy": 151}}
+{"timestamp": "2025-10-04T11:41:00.234137", "event_id": "E054", "event_data": {"event_name": "Station Performance Alert", "station_id": "SCC2", "efficiency_score": 40.0, "recommendation": "Review station operation"}}

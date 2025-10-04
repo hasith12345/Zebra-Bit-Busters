@@ -202,7 +202,11 @@ class EventStreamRequestHandler(socketserver.BaseRequestHandler):
                         "original_timestamp": original_timestamp,
                         "event": event_copy,
                     }
-                    self.request.sendall(json.dumps(frame).encode("utf-8") + b"\n")
+                    try:
+                        self.request.sendall(json.dumps(frame).encode("utf-8") + b"\n")
+                    except (BrokenPipeError, ConnectionResetError, ConnectionAbortedError, OSError):
+                        LOGGER.info("Client %s:%s disconnected during transmission", client_host, client_port)
+                        break
                     sequence += 1
 
                 if not server.loop:
@@ -211,8 +215,10 @@ class EventStreamRequestHandler(socketserver.BaseRequestHandler):
 
                 loop_index += 1
                 LOGGER.info("Completed loop cycle %d, starting next cycle", loop_index)
-        except (BrokenPipeError, ConnectionResetError):
+        except (BrokenPipeError, ConnectionResetError, ConnectionAbortedError, OSError):
             LOGGER.info("Client %s:%s disconnected", client_host, client_port)
+        except Exception as e:
+            LOGGER.error("Unexpected error serving client %s:%s: %s", client_host, client_port, e)
         finally:
             LOGGER.info("Stream to %s:%s ended", client_host, client_port)
 

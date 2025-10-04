@@ -28,7 +28,7 @@ START_PROJECT_SENTINEL.bat
 - Weight Discrepancy Analysis
 - System Crash Detection
 - Queue Management
-- - 4 more advanced algorithms
+- + 4 more advanced algorithms
 
 ### Dashboards
 
