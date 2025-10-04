@@ -12,6 +12,7 @@ from datetime import datetime
 from data_processor import DataProcessor
 from event_detector import EventDetector
 from dashboard import SentinelDashboard
+from api_server import SentinelAPIServer
 
 
 class SentinelSystem:
@@ -20,6 +21,7 @@ class SentinelSystem:
         self.event_detector = EventDetector(self.data_processor)
         self.dashboard = SentinelDashboard(
             self.data_processor, self.event_detector)
+        self.api_server = SentinelAPIServer(port=3001)
         self.is_running = False
 
     def start_system(self):
@@ -38,6 +40,16 @@ class SentinelSystem:
 
         print("Data processor started")
         print("Event detector ready")
+
+        # Start API server for React dashboard
+        self.api_server.set_system_components(
+            self.data_processor, self.event_detector)
+        if self.api_server.start_server():
+            print("API server started for React dashboard integration")
+        else:
+            print(
+                "Warning: API server failed to start - React dashboard won't have real-time data")
+
         print("Starting live dashboard...")
 
         # Start the dashboard auto-update
@@ -136,6 +148,9 @@ class SentinelSystem:
         """Stop the sentinel system"""
         self.is_running = False
         self.data_processor.stop_processing()
+
+        # Stop API server
+        self.api_server.stop_server()
 
         # Stop dashboard auto-update
         self.dashboard.stop_auto_update()
