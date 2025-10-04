@@ -5,7 +5,6 @@ import EventTypes from "./components/EventTypes";
 import StationStatus from "./components/StationStatus";
 import RecentEvents from "./components/RecentEvents";
 import SystemStatus from "./components/SystemStatus";
-import AIDetectionStatus from "./components/AIDetectionStatus";
 import SalesAnalytics from "./components/SalesAnalytics";
 import InventoryInsights from "./components/InventoryInsights";
 import CustomerBehavior from "./components/CustomerBehavior";
@@ -122,79 +121,6 @@ function App() {
           connectionInfo={connectionInfo}
         />
 
-        {/* AI Enhanced System Status - Full Width */}
-        <div className="mb-6">
-          <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-500">
-            <div className="flex items-center justify-between mb-4">
-              <h3 className="text-lg font-semibold text-gray-800 flex items-center">
-                🧠 AI-Enhanced Sentinel Intelligence
-              </h3>
-              <span className="text-xs text-gray-500">
-                Last AI Update: {dashboardData.lastUpdated}
-              </span>
-            </div>
-
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-4">
-              <div className="text-center p-3 bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg">
-                <div className="text-xl font-bold text-blue-600">92.0%</div>
-                <div className="text-xs text-blue-800">System Health</div>
-              </div>
-              <div className="text-center p-3 bg-gradient-to-br from-green-50 to-green-100 rounded-lg">
-                <div className="text-xl font-bold text-green-600">94.2%</div>
-                <div className="text-xs text-green-800">Detection Accuracy</div>
-              </div>
-              <div className="text-center p-3 bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg">
-                <div className="text-xl font-bold text-purple-600">10/10</div>
-                <div className="text-xs text-purple-800">AI Algorithms</div>
-              </div>
-              <div className="text-center p-3 bg-gradient-to-br from-orange-50 to-orange-100 rounded-lg">
-                <div className="text-xl font-bold text-orange-600">98.5%</div>
-                <div className="text-xs text-orange-800">Efficiency</div>
-              </div>
-              <div className="text-center p-3 bg-gradient-to-br from-teal-50 to-teal-100 rounded-lg">
-                <div className="text-xl font-bold text-teal-600">87.5%</div>
-                <div className="text-xs text-teal-800">AI Confidence</div>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="p-3 bg-gray-50 rounded-lg">
-                <div className="text-sm font-medium text-gray-700 mb-2">
-                  🤖 Active AI Algorithms:
-                </div>
-                <div className="space-y-1 text-xs text-gray-600">
-                  <div>🔍 Enhanced Scan Avoidance Detection</div>
-                  <div>🏷️ ML-Powered Barcode Switching Detection</div>
-                  <div>🚨 Theft Risk Scoring Engine</div>
-                  <div>📈 Predictive Queue Forecasting</div>
-                  <div>🌱 Sustainability Intelligence</div>
-                </div>
-              </div>
-              <div className="p-3 bg-gray-50 rounded-lg">
-                <div className="text-sm font-medium text-gray-700 mb-2">
-                  🎯 Current Status:
-                </div>
-                <div className="space-y-1 text-xs">
-                  <div className="flex justify-between">
-                    <span>Threat Level:</span>
-                    <span className="px-2 py-1 bg-yellow-100 text-yellow-800 rounded-full">
-                      Moderate
-                    </span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Active Monitoring:</span>
-                    <span className="text-green-600">✅ Online</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>AI Processing:</span>
-                    <span className="text-green-600">✅ Real-time</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* System Overview Row */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
           <SystemOverview
@@ -226,7 +152,6 @@ function App() {
             systemStatus={dashboardData.systemStatus}
             connectionStatus={connectionStatus}
           />
-          <AIDetectionStatus connectionStatus={connectionStatus} />
         </div>
 
         <Footer />

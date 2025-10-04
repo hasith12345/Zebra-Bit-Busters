@@ -206,50 +206,6 @@ const InventoryInsights = () => {
           )}
         </div>
       </div>
-
-      {/* Product Performance */}
-      <div>
-        <h3 className="text-lg font-semibold text-white mb-3">
-          Top Selling Products
-        </h3>
-        <div className="space-y-2">
-          {inventoryData.product_performance
-            ?.slice(0, 5)
-            .map((product, index) => (
-              <div
-                key={index}
-                className="flex justify-between items-center p-2 bg-white bg-opacity-5 rounded"
-              >
-                <div className="flex items-center">
-                  <span className="text-gray-400 text-sm w-6">
-                    #{index + 1}
-                  </span>
-                  <p className="text-white ml-2">{product.sku}</p>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-16 bg-gray-700 rounded-full h-2 mr-3">
-                    <div
-                      className="bg-gradient-to-r from-blue-500 to-green-500 h-2 rounded-full transition-all duration-500"
-                      style={{
-                        width: `${Math.min(
-                          (product.sales_count /
-                            Math.max(
-                              ...inventoryData.product_performance.map(
-                                (p) => p.sales_count
-                              )
-                            )) *
-                            100,
-                          100
-                        )}%`,
-                      }}
-                    ></div>
-                  </div>
-                  <p className="text-white font-bold">{product.sales_count}</p>
-                </div>
-              </div>
-            ))}
-        </div>
-      </div>
     </div>
   );
 };

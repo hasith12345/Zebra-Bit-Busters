@@ -119,33 +119,6 @@ const SalesAnalytics = () => {
         </div>
       </div>
 
-      {/* Top Products */}
-      <div className="mb-6">
-        <h3 className="text-lg font-semibold text-white mb-3">
-          Top Selling Products
-        </h3>
-        <div className="space-y-2">
-          {salesData.top_products?.slice(0, 5).map((product, index) => (
-            <div
-              key={index}
-              className="flex justify-between items-center p-3 bg-white bg-opacity-10 rounded"
-            >
-              <div>
-                <p className="text-white font-medium">{product.name}</p>
-                <p className="text-gray-300 text-sm">
-                  {product.sales_count} units sold
-                </p>
-              </div>
-              <div className="text-right">
-                <p className="text-green-400 font-bold">
-                  {formatCurrency(product.revenue)}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
       {/* Hourly Sales Trend */}
       <div>
         <h3 className="text-lg font-semibold text-white mb-3">
