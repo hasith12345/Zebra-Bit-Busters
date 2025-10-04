@@ -34,7 +34,8 @@ DATASET_ALIASES: Dict[str, str] = {
     "Product_recognism": "product_recognition",
     "Current_inventory_data": "inventory_snapshots",
 }
-FILENAME_TO_CANONICAL: Dict[str, str] = {v: k for k, v in DATASET_ALIASES.items()}
+FILENAME_TO_CANONICAL: Dict[str, str] = {
+    v: k for k, v in DATASET_ALIASES.items()}
 EXCLUDE_DATASETS = {"events"}
 
 
@@ -75,6 +76,7 @@ def discover_dataset_paths(data_root: Path) -> List[Path]:
                 continue
             discovered[stem] = path
     return list(discovered.values())
+
 
 LOGGER = logging.getLogger("stream_server")
 
@@ -183,7 +185,8 @@ class EventStreamRequestHandler(socketserver.BaseRequestHandler):
                     )
 
                     if previous_emitted is not None:
-                        delta = (adjusted_timestamp - previous_emitted).total_seconds()
+                        delta = (adjusted_timestamp -
+                                 previous_emitted).total_seconds()
                         adjusted = delta / server.speed if server.speed > 0 else 0
                         # Ensure minimum gap between events to prevent flooding
                         if adjusted <= 0:
@@ -203,9 +206,11 @@ class EventStreamRequestHandler(socketserver.BaseRequestHandler):
                         "event": event_copy,
                     }
                     try:
-                        self.request.sendall(json.dumps(frame).encode("utf-8") + b"\n")
+                        self.request.sendall(json.dumps(
+                            frame).encode("utf-8") + b"\n")
                     except (BrokenPipeError, ConnectionResetError, ConnectionAbortedError, OSError):
-                        LOGGER.info("Client %s:%s disconnected during transmission", client_host, client_port)
+                        LOGGER.info(
+                            "Client %s:%s disconnected during transmission", client_host, client_port)
                         break
                     sequence += 1
 
@@ -214,11 +219,13 @@ class EventStreamRequestHandler(socketserver.BaseRequestHandler):
                     break
 
                 loop_index += 1
-                LOGGER.info("Completed loop cycle %d, starting next cycle", loop_index)
+                LOGGER.info(
+                    "Completed loop cycle %d, starting next cycle", loop_index)
         except (BrokenPipeError, ConnectionResetError, ConnectionAbortedError, OSError):
             LOGGER.info("Client %s:%s disconnected", client_host, client_port)
         except Exception as e:
-            LOGGER.error("Unexpected error serving client %s:%s: %s", client_host, client_port, e)
+            LOGGER.error("Unexpected error serving client %s:%s: %s",
+                         client_host, client_port, e)
         finally:
             LOGGER.info("Stream to %s:%s ended", client_host, client_port)
 
@@ -305,7 +312,8 @@ def main() -> None:
         raise SystemExit(f"Data directory not found: {args.data_root}")
 
     if args.datasets:
-        dataset_paths = [resolve_dataset_path(args.data_root, name) for name in args.datasets]
+        dataset_paths = [resolve_dataset_path(
+            args.data_root, name) for name in args.datasets]
     else:
         dataset_paths = discover_dataset_paths(args.data_root)
 

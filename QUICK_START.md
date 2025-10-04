@@ -8,6 +8,7 @@ python run_complete_system.py
 ```
 
 This will automatically start:
+
 - 🌊 Streaming server on port 8765
 - 🐍 Python backend + API server on port 3001
 - ⚛️ React dashboard on port 3000
@@ -15,18 +16,21 @@ This will automatically start:
 ## Option 2: Manual Step-by-Step Launch
 
 ### Step 1: Start Streaming Server
+
 ```bash
 cd "d:\Application files - Do not delete\github\Zebra-Bit-Busters\data\streaming-server"
 python stream_server.py --port 8765 --speed 10 --loop
 ```
 
 ### Step 2: Start Python Backend (New Terminal)
+
 ```bash
 cd "d:\Application files - Do not delete\github\Zebra-Bit-Busters\submission-structure\Bit-Busters\src"
 python main.py
 ```
 
 ### Step 3: Start React Dashboard (New Terminal)
+
 ```bash
 cd "d:\Application files - Do not delete\github\Zebra-Bit-Busters\submission-structure\Bit-Busters\react-dashboard"
 & "C:\Program Files\nodejs\npm.cmd" start
@@ -42,6 +46,7 @@ cd "d:\Application files - Do not delete\github\Zebra-Bit-Busters\submission-str
 ## 🔧 Troubleshooting
 
 If ports are occupied:
+
 ```bash
 cd "d:\Application files - Do not delete\github\Zebra-Bit-Busters"
 python troubleshoot.py
