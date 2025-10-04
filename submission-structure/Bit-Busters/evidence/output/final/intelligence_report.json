@@ -1,0 +1,132 @@
+{
+  "report_metadata": {
+    "generated_at": "2025-10-04T12:31:57.585473",
+    "system_version": "Project Sentinel v2.0 - Enhanced Intelligence",
+    "detection_algorithms": [
+      "Enhanced Scan Avoidance Detection",
+      "Advanced Barcode Switching Detection",
+      "Smart Weight Discrepancy Detection",
+      "Intelligent System Health Monitoring",
+      "Predictive Queue Forecasting",
+      "Theft Risk Scoring Engine",
+      "Enhanced Inventory Intelligence",
+      "Multi-Station Coordinated Fraud Detection",
+      "Intelligent Staffing Optimization",
+      "Sustainability & Efficiency Intelligence"
+    ]
+  },
+  "detection_summary": {
+    "total_events": 3,
+    "event_types": {
+      "System Performance Degradation": 1,
+      "System Crash": 1,
+      "Success Operation": 1
+    },
+    "severity_distribution": {
+      "medium": 2,
+      "high": 1
+    },
+    "recent_events": [
+      {
+        "timestamp": "2025-10-04T12:31:57.523129",
+        "event_id": "SENTINEL-0007",
+        "event_data": {
+          "event_name": "System Performance Degradation",
+          "station_id": "SCO-002",
+          "error_rate": 0.3333333333333333,
+          "transaction_count": 3,
+          "error_count": 1,
+          "severity": "medium",
+          "confidence": "high",
+          "recommendation": "Immediate maintenance required"
+        }
+      },
+      {
+        "timestamp": "2025-10-04T12:31:57.523129",
+        "event_id": "SENTINEL-0008",
+        "event_data": {
+          "event_name": "System Crash",
+          "station_id": "CHECKOUT-005",
+          "last_transaction": "2025-10-04T12:16:55.521460",
+          "downtime_seconds": 902.001669,
+          "severity": "high",
+          "confidence": "high",
+          "estimated_loss": 11275.02
+        }
+      },
+      {
+        "timestamp": "2025-10-04T12:31:57.576799",
+        "event_id": "SENTINEL-0010",
+        "event_data": {
+          "event_name": "Success Operation",
+          "station_id": "SCO-001",
+          "customer_id": null,
+          "SKU": "ELECTRONICS_GAMING_CONTROLLER_001",
+          "transaction_value": 850.0,
+          "confidence": "high",
+          "operational_efficiency": "optimal"
+        }
+      }
+    ],
+    "risk_metrics": {
+      "high_risk_customers": 1,
+      "active_threats": 0,
+      "system_health_score": 90.0
+    },
+    "operational_metrics": {
+      "alert_suppression_rate": 0.0,
+      "detection_accuracy": 90.0,
+      "processing_efficiency": 100.0
+    }
+  },
+  "customer_risk_profiles": {
+    "CUST_SUSPICIOUS_001": {
+      "risk_score": 0.85,
+      "anomaly_count": 5,
+      "visit_frequency": 12
+    }
+  },
+  "system_recommendations": [],
+  "all_events": [
+    {
+      "timestamp": "2025-10-04T12:31:57.523129",
+      "event_id": "SENTINEL-0007",
+      "event_data": {
+        "event_name": "System Performance Degradation",
+        "station_id": "SCO-002",
+        "error_rate": 0.3333333333333333,
+        "transaction_count": 3,
+        "error_count": 1,
+        "severity": "medium",
+        "confidence": "high",
+        "recommendation": "Immediate maintenance required"
+      }
+    },
+    {
+      "timestamp": "2025-10-04T12:31:57.523129",
+      "event_id": "SENTINEL-0008",
+      "event_data": {
+        "event_name": "System Crash",
+        "station_id": "CHECKOUT-005",
+        "last_transaction": "2025-10-04T12:16:55.521460",
+        "downtime_seconds": 902.001669,
+        "severity": "high",
+        "confidence": "high",
+        "estimated_loss": 11275.02
+      }
+    },
+    {
+      "timestamp": "2025-10-04T12:31:57.576799",
+      "event_id": "SENTINEL-0010",
+      "event_data": {
+        "event_name": "Success Operation",
+        "station_id": "SCO-001",
+        "customer_id": null,
+        "SKU": "ELECTRONICS_GAMING_CONTROLLER_001",
+        "transaction_value": 850.0,
+        "confidence": "high",
+        "operational_efficiency": "optimal"
+      }
+    }
+  ]
+}
