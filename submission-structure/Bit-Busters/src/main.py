@@ -66,14 +66,26 @@ class SentinelSystem:
 
         return thread
 
-    def run_monitoring_cycle(self, duration_seconds=60):
-        """Run monitoring for specified duration"""
+    def run_monitoring_cycle(self, max_duration_seconds=None):
+        """Run monitoring until data stream ends or max duration reached"""
         start_time = time.time()
         last_status_time = 0
+        data_stream_active = True
 
         try:
-            while self.is_running and (time.time() - start_time) < duration_seconds:
+            while self.is_running and data_stream_active:
                 current_time = time.time()
+
+                # Check if max duration exceeded (if specified)
+                if max_duration_seconds and (current_time - start_time) > max_duration_seconds:
+                    print(f"\n⏱️  Maximum duration ({max_duration_seconds}s) reached")
+                    break
+
+                # Check if data stream is still active
+                if not self.data_processor.is_running:
+                    print(f"\n📊 Data stream ended - all dataset processed")
+                    data_stream_active = False
+                    break
 
                 # Run event detection every 10 seconds
                 if current_time - last_status_time >= 10:
@@ -86,7 +98,11 @@ class SentinelSystem:
         except KeyboardInterrupt:
             print("\n⚠️  Monitoring interrupted by user")
 
-        print(f"\n✅ Monitoring completed ({duration_seconds} seconds)")
+        elapsed_time = int(time.time() - start_time)
+        if data_stream_active:
+            print(f"\n✅ Monitoring completed ({elapsed_time} seconds)")
+        else:
+            print(f"\n✅ Monitoring completed - dataset fully processed ({elapsed_time} seconds)")
 
     def check_for_events(self):
         """Check for new events and alert if found"""
@@ -172,7 +188,8 @@ def main():
         print("Error: Streaming server not running!")
         print("Please start the streaming server first:")
         print("cd ../../data/streaming-server")
-        print("python stream_server.py --port 8765 --speed 10 --loop")
+        print("python stream_server.py --port 8765 --speed 10")
+        print("Note: Remove --loop flag to process dataset once and end naturally")
         return
 
     system = SentinelSystem()
@@ -181,9 +198,9 @@ def main():
         # Start the system
         thread = system.start_system()
 
-        # Run monitoring (default 2 minutes for testing)
-        monitoring_duration = 120  # seconds
-        system.run_monitoring_cycle(monitoring_duration)
+        # Run monitoring until data stream ends naturally (no fixed duration)
+        # Optional: Set max_duration_seconds if you want a safety timeout
+        system.run_monitoring_cycle(max_duration_seconds=3600)  # 1 hour max safety timeout
 
         # Generate final report
         system.generate_final_report("../evidence/output/test/events.jsonl")

@@ -193,11 +193,17 @@ class DataProcessor:
                             self.process_event(event)
                         except json.JSONDecodeError as e:
                             print(f"Error parsing JSON: {e}")
+                    
+                    # If we reach here, the stream ended naturally (no more data)
+                    print(f"[{datetime.now().strftime('%Y-%m-%dT%H:%M:%S')}] 📊 Data stream ended - all dataset processed")
+                    self.is_running = False  # Signal that data processing is complete
 
         except ConnectionError as e:
             print(f"Connection error: {e}")
+            self.is_running = False
         except Exception as e:
             print(f"Unexpected error: {e}")
+            self.is_running = False
 
     def process_event(self, event):
         """Process incoming event and store in appropriate data structure"""
