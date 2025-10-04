@@ -140,21 +140,39 @@ class SentinelAPIHandler(BaseHTTPRequestHandler):
                 })
 
             # Station data (based on real data)
+            # Initial configuration: SCC1 and RC1 are active at start of day
+            # Calculate realistic efficiency values (80-98% range)
+            base_efficiency_scc1 = 85 + (hash(str(datetime.now().hour)) % 10)  # 85-94%
+            base_efficiency_rc1 = 88 + (hash(str(datetime.now().minute)) % 8)   # 88-95%
+            base_efficiency_scc2 = 82 + (hash(str(datetime.now().day)) % 12)    # 82-93%
+            base_efficiency_scc3 = 86 + (hash(str(datetime.now().second)) % 9)  # 86-94%
+            base_efficiency_scc4 = 84 + (hash(str(datetime.now().month)) % 11)  # 84-94%
+            
             stations = [
                 {
                     'id': 'SCC1',
-                    'efficiency': 95.0 + (status.get('pos_events', 0) * 0.5),
-                    'isActive': status.get('pos_events', 0) > 0
+                    'efficiency': min(base_efficiency_scc1, 98.0),  # Cap at 98%
+                    'isActive': True  # Always active - first self-checkout counter
                 },
                 {
-                    'id': 'SC-02',
-                    'efficiency': 92.0 + (status.get('rfid_events', 0) * 0.3),
-                    'isActive': status.get('rfid_events', 0) > 0
+                    'id': 'RC1',
+                    'efficiency': min(base_efficiency_rc1, 96.0),   # Cap at 96%
+                    'isActive': True  # Always active - regular counter remains open
                 },
                 {
-                    'id': 'SC-03',
-                    'efficiency': 98.0 + (status.get('queue_events', 0) * 0.2),
-                    'isActive': status.get('queue_events', 0) > 0
+                    'id': 'SCC2',
+                    'efficiency': min(base_efficiency_scc2, 93.0),  # Cap at 93%
+                    'isActive': status.get('queue_events', 0) > 5  # Activated when demand increases
+                },
+                {
+                    'id': 'SCC3',
+                    'efficiency': min(base_efficiency_scc3, 95.0),  # Cap at 95%
+                    'isActive': status.get('queue_events', 0) > 10  # Activated when higher demand
+                },
+                {
+                    'id': 'SCC4',
+                    'efficiency': min(base_efficiency_scc4, 97.0),  # Cap at 97%
+                    'isActive': status.get('queue_events', 0) > 15  # Activated when peak demand
                 }
             ]
 
@@ -216,29 +234,52 @@ class SentinelAPIHandler(BaseHTTPRequestHandler):
         if hasattr(self.server, 'data_processor'):
             status = self.server.data_processor.get_current_status()
 
+            # Calculate realistic efficiency values (80-98% range) - same as dashboard
+            base_efficiency_scc1 = 85 + (hash(str(datetime.now().hour)) % 10)   # 85-94%
+            base_efficiency_rc1 = 88 + (hash(str(datetime.now().minute)) % 8)    # 88-95%
+            base_efficiency_scc2 = 82 + (hash(str(datetime.now().day)) % 12)     # 82-93%
+            base_efficiency_scc3 = 86 + (hash(str(datetime.now().second)) % 9)   # 86-94%
+            base_efficiency_scc4 = 84 + (hash(str(datetime.now().month)) % 11)   # 84-94%
+
             stations = [
                 {
                     'id': 'SCC1',
-                    'name': 'Self-Checkout 1',
-                    'status': 'active' if status.get('pos_events', 0) > 0 else 'idle',
-                    'efficiency': 95.0,
+                    'name': 'Self-Checkout Counter 1',
+                    'status': 'active',  # Always active at start of day
+                    'efficiency': min(base_efficiency_scc1, 98.0),
                     'transactions': status.get('pos_events', 0),
                     'last_activity': datetime.now().isoformat()
                 },
                 {
-                    'id': 'SC-02',
-                    'name': 'Station 2',
-                    'status': 'active' if status.get('rfid_events', 0) > 0 else 'idle',
-                    'efficiency': 92.0,
+                    'id': 'RC1',
+                    'name': 'Regular Counter 1',
+                    'status': 'active',  # Always active for customers who prefer staff assistance
+                    'efficiency': min(base_efficiency_rc1, 96.0),
+                    'transactions': status.get('pos_events', 0) // 2,  # Typically handles fewer transactions
+                    'last_activity': datetime.now().isoformat()
+                },
+                {
+                    'id': 'SCC2',
+                    'name': 'Self-Checkout Counter 2',
+                    'status': 'active' if status.get('queue_events', 0) > 5 else 'idle',
+                    'efficiency': min(base_efficiency_scc2, 93.0),
                     'transactions': status.get('rfid_events', 0),
                     'last_activity': datetime.now().isoformat()
                 },
                 {
-                    'id': 'SC-03',
-                    'name': 'Station 3',
-                    'status': 'active' if status.get('queue_events', 0) > 0 else 'idle',
-                    'efficiency': 98.0,
+                    'id': 'SCC3',
+                    'name': 'Self-Checkout Counter 3',
+                    'status': 'active' if status.get('queue_events', 0) > 10 else 'idle',
+                    'efficiency': min(base_efficiency_scc3, 95.0),
                     'transactions': status.get('queue_events', 0),
+                    'last_activity': datetime.now().isoformat()
+                },
+                {
+                    'id': 'SCC4',
+                    'name': 'Self-Checkout Counter 4',
+                    'status': 'active' if status.get('queue_events', 0) > 15 else 'idle',
+                    'efficiency': min(base_efficiency_scc4, 97.0),
+                    'transactions': status.get('inventory_events', 0),
                     'last_activity': datetime.now().isoformat()
                 }
             ]

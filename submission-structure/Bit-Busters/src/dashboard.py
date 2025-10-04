@@ -90,12 +90,26 @@ class SentinelDashboard:
                         'is_active': True
                     }
             else:
-                # Sample station data for demo
-                for i in range(3):
-                    station_id = f"SC-{i+1:02d}"
-                    station_stats[station_id] = {
-                        'efficiency': 85 + i*3 + (hash(str(datetime.now().minute)) % 10),
-                        'is_active': True
+                # Sample station data for demo - reflecting real store configuration
+                # Initial stations: SCC1 (Self-Checkout Counter 1) and RC1 (Regular Counter 1)
+                # Calculate realistic efficiency values (80-98% range)
+                base_efficiency_scc1 = 85 + (hash(str(datetime.now().hour)) % 10)   # 85-94%
+                base_efficiency_rc1 = 88 + (hash(str(datetime.now().minute)) % 8)    # 88-95%
+                base_efficiency_scc2 = 82 + (hash(str(datetime.now().day)) % 12)     # 82-93%
+                base_efficiency_scc3 = 86 + (hash(str(datetime.now().second)) % 9)   # 86-94%
+                base_efficiency_scc4 = 84 + (hash(str(datetime.now().month)) % 11)   # 84-94%
+                
+                initial_stations = [
+                    {'id': 'SCC1', 'efficiency': min(base_efficiency_scc1, 98), 'active': True},
+                    {'id': 'RC1', 'efficiency': min(base_efficiency_rc1, 96), 'active': True},
+                    {'id': 'SCC2', 'efficiency': min(base_efficiency_scc2, 93), 'active': False},  # Activated when needed
+                    {'id': 'SCC3', 'efficiency': min(base_efficiency_scc3, 95), 'active': False},  # Activated when needed
+                    {'id': 'SCC4', 'efficiency': min(base_efficiency_scc4, 97), 'active': False}   # Activated when needed
+                ]
+                for station in initial_stations:
+                    station_stats[station['id']] = {
+                        'efficiency': station['efficiency'],
+                        'is_active': station['active']
                     }
         else:
             events = self.load_events()

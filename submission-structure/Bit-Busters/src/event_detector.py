@@ -172,7 +172,7 @@ class EventDetector:
                     confidence_factors['risk_factor'] = 0.3  # Default low risk
                 
                 # Station type factor (self-checkout higher risk)
-                confidence_factors['station_factor'] = 0.8 if station_id.startswith('SCO') else 0.5
+                confidence_factors['station_factor'] = 0.8 if station_id.startswith('SCC') else 0.5
                 
                 # Time factor (longer without scan = higher confidence)
                 confidence_factors['time_factor'] = 0.7  # Base time confidence
@@ -300,7 +300,7 @@ class EventDetector:
         pos_data = self.get_recent_data(self.data_processor.pos_data, 20)
         
         for pos_event in pos_data:
-            if pos_event.get('station_id', '').startswith('SCO'):  # Self-checkout stations
+            if pos_event.get('station_id', '').startswith('SCC'):  # Self-checkout stations
                 sku = pos_event.get('data', {}).get('sku')
                 actual_weight = pos_event.get('data', {}).get('weight', 0)
                 customer_id = pos_event.get('data', {}).get('customer_id')
@@ -445,7 +445,7 @@ class EventDetector:
         """Calculate estimated revenue impact of system downtime"""
         # Estimate based on average transaction value and frequency
         avg_transaction_value = 250.0  # LKR average
-        transactions_per_minute = 2.0 if station_id.startswith('SCO') else 3.0
+        transactions_per_minute = 2.0 if station_id.startswith('SCC') else 3.0
         
         minutes_down = downtime_seconds / 60.0
         estimated_lost_transactions = minutes_down * transactions_per_minute
@@ -1060,7 +1060,7 @@ class EventDetector:
         }.get(current_hour, 0.5)
         
         # Adjust for station type
-        if station_id.startswith('SCO'):
+        if station_id.startswith('SCC'):
             base_demand *= 0.8  # Self-checkout typically has higher throughput
         
         return base_demand
