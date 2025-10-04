@@ -1,69 +1,125 @@
-import React, { useState, useEffect } from 'react';
-import Header from './components/Header';
-import SystemOverview from './components/SystemOverview';
-import EventTypes from './components/EventTypes';
-import StationStatus from './components/StationStatus';
-import RecentEvents from './components/RecentEvents';
-import SystemStatus from './components/SystemStatus';
-import AIDetectionStatus from './components/AIDetectionStatus';
-import Footer from './components/Footer';
-import './index.css';
+import React, { useState, useEffect } from "react";
+import Header from "./components/Header";
+import SystemOverview from "./components/SystemOverview";
+import EventTypes from "./components/EventTypes";
+import StationStatus from "./components/StationStatus";
+import RecentEvents from "./components/RecentEvents";
+import SystemStatus from "./components/SystemStatus";
+import AIDetectionStatus from "./components/AIDetectionStatus";
+import Footer from "./components/Footer";
+import "./index.css";
+
+const API_BASE_URL = "http://localhost:3001/api";
 
 function App() {
   const [dashboardData, setDashboardData] = useState({
-    totalEvents: 35,
-    activeStations: 3,
-    averageEfficiency: 96.0,
-    eventTypes: [
-      { name: 'System Crash', count: 12, percentage: 34.3 },
-      { name: 'Inventory Discrepancy', count: 12, percentage: 34.3 },
-      { name: 'Scanner Avoidance', count: 11, percentage: 31.4 },
-    ],
-    stations: [
-      { id: 'SC-01', efficiency: 93.0, isActive: true },
-      { id: 'SC-02', efficiency: 96.0, isActive: true },
-      { id: 'SC-03', efficiency: 99.0, isActive: true },
-    ],
-    recentEvents: [
-      { id: 'E035', type: 'Inventory Discrepancy', timestamp: '2025-10-04T02:26:21' },
-      { id: 'E034', type: 'System Crash', timestamp: '2025-10-04T02:26:21' },
-      { id: 'E033', type: 'Scanner Avoidance', timestamp: '2025-10-04T02:26:21' },
-      { id: 'E032', type: 'Inventory Discrepancy', timestamp: '2025-10-04T02:26:11' },
-      { id: 'E031', type: 'System Crash', timestamp: '2025-10-04T02:26:11' },
-      { id: 'E030', type: 'Scanner Avoidance', timestamp: '2025-10-04T02:26:11' },
-      { id: 'E029', type: 'Inventory Discrepancy', timestamp: '2025-10-04T02:26:01' },
-      { id: 'E028', type: 'System Crash', timestamp: '2025-10-04T02:26:01' },
-      { id: 'E027', type: 'Scanner Avoidance', timestamp: '2025-10-04T02:26:01' },
-      { id: 'E026', type: 'Inventory Discrepancy', timestamp: '2025-10-04T02:25:51' },
-    ],
+    totalEvents: 0,
+    activeStations: 0,
+    averageEfficiency: 0,
+    eventTypes: [],
+    stations: [],
+    recentEvents: [],
     lastUpdated: new Date().toLocaleString(),
+    systemStatus: {
+      rfid_events: 0,
+      pos_events: 0,
+      queue_events: 0,
+      recognition_events: 0,
+    },
+    isConnected: false,
   });
 
-  // Simulate auto-refresh functionality
-  useEffect(() => {
-    const interval = setInterval(() => {
-      // In a real app, this would fetch data from an API
-      setDashboardData(prevData => ({
+  const [connectionStatus, setConnectionStatus] = useState("connecting");
+
+  // Fetch dashboard data from API
+  const fetchDashboardData = async () => {
+    try {
+      const response = await fetch(`${API_BASE_URL}/dashboard`);
+      if (response.ok) {
+        const data = await response.json();
+        setDashboardData((prevData) => ({
+          ...data,
+          isConnected: !data.error,
+        }));
+        setConnectionStatus(data.error ? "disconnected" : "connected");
+      } else {
+        throw new Error(`HTTP ${response.status}`);
+      }
+    } catch (error) {
+      console.warn("Failed to fetch dashboard data:", error.message);
+      setConnectionStatus("disconnected");
+      // Keep existing data but mark as disconnected
+      setDashboardData((prevData) => ({
         ...prevData,
+        isConnected: false,
         lastUpdated: new Date().toLocaleString(),
-        // Simulate slight changes in efficiency
-        stations: prevData.stations.map(station => ({
-          ...station,
-          efficiency: Math.max(85, Math.min(100, station.efficiency + (Math.random() - 0.5) * 2))
-        }))
       }));
-    }, 3000); // Update every 3 seconds
+    }
+  };
+
+  // Initial data fetch and setup auto-refresh
+  useEffect(() => {
+    // Fetch data immediately
+    fetchDashboardData();
+
+    // Set up auto-refresh every 3 seconds
+    const interval = setInterval(fetchDashboardData, 3000);
 
     return () => clearInterval(interval);
   }, []);
 
+  // Show connection status in UI
+  const getConnectionIndicator = () => {
+    switch (connectionStatus) {
+      case "connected":
+        return {
+          color: "text-green-400",
+          text: "LIVE",
+          status: "Connected to Sentinel System",
+        };
+      case "disconnected":
+        return {
+          color: "text-red-400",
+          text: "OFFLINE",
+          status: "Disconnected - Showing last known data",
+        };
+      default:
+        return {
+          color: "text-yellow-400",
+          text: "CONNECTING",
+          status: "Connecting to Sentinel System...",
+        };
+    }
+  };
+
+  const connectionInfo = getConnectionIndicator();
+
   return (
     <div className="min-h-screen bg-gradient-main">
       <div className="p-6">
-        <Header lastUpdated={dashboardData.lastUpdated} />
-        
+        {/* Connection Status Banner */}
+        {connectionStatus !== "connected" && (
+          <div
+            className={`text-center p-3 mb-4 rounded-lg ${
+              connectionStatus === "disconnected"
+                ? "bg-red-900 bg-opacity-50"
+                : "bg-yellow-900 bg-opacity-50"
+            }`}
+          >
+            <span className={`font-semibold ${connectionInfo.color}`}>
+              {connectionInfo.status}
+            </span>
+          </div>
+        )}
+
+        <Header
+          lastUpdated={dashboardData.lastUpdated}
+          connectionStatus={connectionStatus}
+          connectionInfo={connectionInfo}
+        />
+
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
-          <SystemOverview 
+          <SystemOverview
             totalEvents={dashboardData.totalEvents}
             activeStations={dashboardData.activeStations}
             averageEfficiency={dashboardData.averageEfficiency}
@@ -74,8 +130,12 @@ function App() {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
           <RecentEvents events={dashboardData.recentEvents} />
-          <SystemStatus totalEvents={dashboardData.totalEvents} />
-          <AIDetectionStatus />
+          <SystemStatus
+            totalEvents={dashboardData.totalEvents}
+            systemStatus={dashboardData.systemStatus}
+            connectionStatus={connectionStatus}
+          />
+          <AIDetectionStatus connectionStatus={connectionStatus} />
         </div>
 
         <Footer />
